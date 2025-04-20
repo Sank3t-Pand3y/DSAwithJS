@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+
+    <script>
+        let funcdata = [1134,235,123,1235,231512,1425124];
+        let data = [12,21,33,44,35,36,11,1121];
+        for (let i = 0; i<data.length; i++){
+            document.write(`Arrat ${i} is ${data[i]} <br> `);
+        }
+        function getElement(){
+            let el = document.getElementById("element").value;
+            if(el<funcdata.length && typeof parseInt(el) === "number")
+            {
+            alert(funcdata[el])
+            }else{
+                alert("Please Enter Valid Value Mate")
+            }
+        }
+
+    </script>
+
+    
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">Get Element</button>
+</body>
+</html>
